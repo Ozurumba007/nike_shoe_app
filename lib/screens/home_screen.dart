@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nike_store/components/bottom_nav_bar.dart';
+import 'package:nike_store/screens/cart_screen.dart';
+import 'package:nike_store/screens/shop_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
