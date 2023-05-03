@@ -47,7 +47,35 @@ class IntroScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
 
-              // start new button
+              const SizedBox(height: 48),
+
+              // start now button
+
+              GestureDetector(
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => HomeScreen(),
+                  ),
+                ),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.grey[900],
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  padding: const EdgeInsets.all(25),
+                  child: const Center(
+                    child: Text(
+                      'Shop Now',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
