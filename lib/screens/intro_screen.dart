@@ -11,6 +11,8 @@ class IntroScreen extends StatelessWidget {
         children: [
           // Logo
 
+          Image.asset('lib/images/nike_logo.png'),
+
           // title
 
           // sub title
