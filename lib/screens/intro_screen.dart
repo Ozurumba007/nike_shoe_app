@@ -11,7 +11,15 @@ class IntroScreen extends StatelessWidget {
         children: [
           // Logo
 
-          Image.asset('lib/images/nike_logo.png'),
+          Padding(
+            padding: const EdgeInsets.all(25.0),
+            child: Image.asset(
+              'lib/images/nike_logo.png',
+              height: 200,
+            ),
+          ),
+
+          const SizedBox(height: 48),
 
           // title
 
