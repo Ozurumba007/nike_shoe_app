@@ -25,9 +25,9 @@ class _HomeScreenState extends State<HomeScreen> {
   // screens to display
   final List<Widget> _pages = [
     // shop page
-    const ShopPage(),
+    const ShopScreen(),
     // cart page
-    const CartPage(),
+    const CartScreen(),
   ];
 
   @override
