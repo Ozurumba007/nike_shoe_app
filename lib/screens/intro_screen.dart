@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'home_screen.dart';
+
 class IntroScreen extends StatelessWidget {
   const IntroScreen({super.key});
 
@@ -11,6 +13,7 @@ class IntroScreen extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 25.0),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // Logo
 
