@@ -5,6 +5,19 @@ class IntroScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.grey[300],
+      body: Column(
+        children: [
+          // Logo
+
+          // title
+
+          // sub title
+
+          // start new button
+        ],
+      ),
+    );
   }
 }
