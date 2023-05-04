@@ -58,7 +58,7 @@ class _ShopScreenState extends State<ShopScreen> {
                 'Hot Pick 🍻',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 24,
+                  fontSize: 30,
                 ),
               ),
               Text(
@@ -66,6 +66,7 @@ class _ShopScreenState extends State<ShopScreen> {
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.blue,
+                  fontSize: 20,
                 ),
               ),
             ],

@@ -87,7 +87,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       left: 25.0,
                     ),
                     child: ListTile(
-                      leading: Icon(Icons.home),
+                      leading: Icon(
+                        Icons.home,
+                        color: Colors.white,
+                      ),
                       title: Text(
                         'Home',
                         style: TextStyle(
@@ -99,7 +102,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   const Padding(
                     padding: const EdgeInsets.only(left: 25.0),
                     child: ListTile(
-                      leading: Icon(Icons.info),
+                      leading: Icon(
+                        Icons.info,
+                        color: Colors.white,
+                      ),
                       title: Text(
                         'About',
                         style: TextStyle(
@@ -116,7 +122,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   bottom: 25,
                 ),
                 child: ListTile(
-                  leading: Icon(Icons.logout),
+                  leading: Icon(
+                    Icons.logout,
+                    color: Colors.white,
+                  ),
                   title: Text(
                     'Logout',
                     style: TextStyle(
