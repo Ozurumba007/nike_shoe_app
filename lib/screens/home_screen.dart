@@ -43,9 +43,12 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.transparent,
         leading: Builder(
           builder: (context) => IconButton(
-            icon: Icon(
-              Icons.menu,
-              color: Colors.black,
+            icon: const Padding(
+              padding: EdgeInsets.only(left: 12.0),
+              child: Icon(
+                Icons.menu,
+                color: Colors.black,
+              ),
             ),
             onPressed: () {
               Scaffold.of(context).openDrawer();
@@ -104,7 +107,10 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
             const Padding(
-              padding: const EdgeInsets.only(left: 25.0),
+              padding: const EdgeInsets.only(
+                left: 25.0,
+                bottom: 25,
+              ),
               child: ListTile(
                 leading: Icon(Icons.logout),
                 title: Text(
