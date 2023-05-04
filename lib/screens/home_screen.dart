@@ -26,9 +26,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
   // screens to display
   final List<Widget> _pages = [
-    // shop page
+    // shop screen
     const ShopScreen(),
-    // cart page
+    // cart screen
     const CartScreen(),
   ];
 
@@ -36,8 +36,10 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[300],
-      bottomNavigationBar:
-          MyBottomNavBar(onTapChange: (index) => navigateBottomBar(index)),
+      bottomNavigationBar: MyBottomNavBar(
+        onTapChange: (index) => navigateBottomBar(index),
+      ),
+      body: _pages[_selectedIndex],
     );
   }
 }
