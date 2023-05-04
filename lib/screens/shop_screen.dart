@@ -34,13 +34,15 @@ class _ShopScreenState extends State<ShopScreen> {
             ],
           ),
         ),
+
         // message
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 25.0),
+          padding: const EdgeInsets.symmetric(vertical: 25.0),
           child: Text(
             'Everyone Flies... some fly longer than others',
             style: TextStyle(
               color: Colors.grey[600],
+              fontSize: 18,
             ),
           ),
         ),
@@ -79,10 +81,11 @@ class _ShopScreenState extends State<ShopScreen> {
             itemBuilder: (context, index) {
               // create a shoe
               Shoe shoe = Shoe(
-                  name: 'Zion William',
-                  price: '\$500',
-                  imagePath: 'lib/images/zion_williams_shoe.png',
-                  description: 'Cool Shoe');
+                name: 'Zion William',
+                price: '\$500',
+                imagePath: 'lib/images/zion_williams_shoe.png',
+                description: 'Cool Shoe',
+              );
               return ShoeTile(
                 shoe: shoe,
               );
