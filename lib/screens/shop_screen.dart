@@ -72,16 +72,23 @@ class _ShopScreenState extends State<ShopScreen> {
 
         const SizedBox(height: 10),
 
-        Expanded(child: ListView.builder(itemBuilder: (context, index) {
-          Shoe shoe = Shoe(
-              name: 'Zion William',
-              price: '\$500',
-              imagePath: 'lib/images/zion_williams_shoe.png',
-              description: 'Cool Shoe');
-          return ShoeTile(
-            shoe: shoe,
-          );
-        }))
+        Expanded(
+          child: ListView.builder(
+            itemCount: 4,
+            scrollDirection: Axis.horizontal,
+            itemBuilder: (context, index) {
+              // create a shoe
+              Shoe shoe = Shoe(
+                  name: 'Zion William',
+                  price: '\$500',
+                  imagePath: 'lib/images/zion_williams_shoe.png',
+                  description: 'Cool Shoe');
+              return ShoeTile(
+                shoe: shoe,
+              );
+            },
+          ),
+        ),
       ],
     );
   }

@@ -19,13 +19,44 @@ class ShoeTile extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
       ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           // shoe pic
-          Image.asset(shoe.imagePath)
+          ClipRRect(
+            borderRadius: BorderRadius.circular(12),
+            child: Image.asset(shoe.imagePath),
+          ),
 
           // description
 
+          Text(
+            shoe.description,
+            style: TextStyle(
+              color: Colors.grey[600],
+            ),
+          ),
+
           // price + details
+
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Column(
+                children: [
+                  // shoe name
+                  Text(shoe.name),
+
+                  // price
+                  Text(shoe.price),
+                ],
+              ),
+
+              // plus button
+              Container(
+                child: Icon(Icons.add),
+              ),
+            ],
+          ),
 
           // button to add cart
         ],
