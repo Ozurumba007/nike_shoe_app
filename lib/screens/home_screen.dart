@@ -53,6 +53,30 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
+      drawer: Drawer(
+        backgroundColor: Colors.grey[900],
+        child: Column(
+          children: [
+            // logo
+            DrawerHeader(
+              child: Image.asset(
+                'lib/images/nike_logo.png',
+                color: Colors.white,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 25.0,
+              ),
+              child: Divider(
+                color: Colors.grey[800],
+              ),
+            ),
+
+            // other pages
+          ],
+        ),
+      ),
       body: _pages[_selectedIndex],
     );
   }
