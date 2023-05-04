@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nike_store/models/shoe.dart';
 
 import '../components/shoe_tile.dart';
 
@@ -72,7 +73,14 @@ class _ShopScreenState extends State<ShopScreen> {
         const SizedBox(height: 10),
 
         Expanded(child: ListView.builder(itemBuilder: (context, index) {
-          return ShoeTile();
+          Shoe shoe = Shoe(
+              name: 'Zion William',
+              price: '\$500',
+              imagePath: 'lib/images/zion_williams_shoe.png',
+              description: 'Cool Shoe');
+          return ShoeTile(
+            shoe: shoe,
+          );
         }))
       ],
     );
