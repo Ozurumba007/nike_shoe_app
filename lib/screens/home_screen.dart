@@ -39,6 +39,20 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: MyBottomNavBar(
         onTapChange: (index) => navigateBottomBar(index),
       ),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        leading: Builder(
+          builder: (context) => IconButton(
+            icon: Icon(
+              Icons.menu,
+              color: Colors.black,
+            ),
+            onPressed: () {
+              Scaffold.of(context).openDrawer();
+            },
+          ),
+        ),
+      ),
       body: _pages[_selectedIndex],
     );
   }
