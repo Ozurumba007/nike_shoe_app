@@ -13,7 +13,7 @@ class ShoeTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(left: 25),
-      width: 300,
+      width: 250,
       decoration: BoxDecoration(
         color: Colors.grey[100],
         borderRadius: BorderRadius.circular(12),
@@ -42,6 +42,7 @@ class ShoeTile extends StatelessWidget {
             padding: const EdgeInsets.only(left: 25.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -85,8 +86,6 @@ class ShoeTile extends StatelessWidget {
               ],
             ),
           ),
-
-          // button to add cart
         ],
       ),
     );
