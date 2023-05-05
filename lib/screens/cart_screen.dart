@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../components/cart_item.dart';
 import '../models/cart.dart';
 import '../models/shoe.dart';
 
@@ -13,6 +14,7 @@ class CartScreen extends StatelessWidget {
       builder: (context, value, child) => Padding(
         padding: const EdgeInsets.symmetric(horizontal: 25.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               'My Cart',
@@ -21,14 +23,17 @@ class CartScreen extends StatelessWidget {
                 fontSize: 24,
               ),
             ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 25),
             Expanded(
               child: ListView.builder(
+                itemCount: value.getUserCart().length,
                 itemBuilder: (context, index) {
                   // get individual shoe
                   Shoe individualShoe = value.getUserCart()[index];
                   // return cart item
-                  return CartItem();
+                  return CartItem(
+                    shoe: individualShoe,
+                  );
                 },
               ),
             ),
